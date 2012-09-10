@@ -95,6 +95,7 @@ alias sshm3p='ssh -p 9203 geoff@monster-03.cumulusnetworks.com'
 alias sshm4p='ssh -p 9204 geoff@monster-04.cumulusnetworks.com'
 alias sshdx='ssh geoff@dealextreme.mit.edu'
 alias sshdxr='ssh root@dealextreme.mit.edu'
+alias ssha='ssh glalonde@athena.dialup.mit.edu'
 #passwordless entry:
 #run ssh-keygen -t rsa
 #and then ssh-copy-id -i ~/.ssh/id_rsa.pub externalcomp
