@@ -75,10 +75,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
@@ -124,3 +120,30 @@ fi
 
 # enable texlive custom install:
 PATH=/usr/local/texlive/2012/bin/x86_64-linux:$PATH
+
+alias ab='/home/engshare/devtools/arcanist/bin/arc build'
+alias up='git fetch; git rebase trunk; ab'
+function new { git checkout -b $1 trunk; up; }
+alias com='git commit -a'
+alias acom='git commit -a --amend'
+alias sw='git checkout'
+alias st='git status'
+alias br='git branch'
+alias ad='/home/engshare/devtools/arcanist/bin/arc diff'
+alias sm='/home/engshare/devtools/arcanist/bin/arc amend; git svn dcommit'
+alias cont='git rebase --continue'
+alias del='sw master; git branch -D'
+
+
+alias sshdev='ssh devrs019.prn2.facebook.com'
+
+export ANDROID_SDK=/Users/glalonde/android-sdk-macosx
+export ANDROID_NDK=/Users/glalonde/android-ndk-r8d
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
+export CLICOLOR=true
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;35;40'

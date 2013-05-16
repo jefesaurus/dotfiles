@@ -7,3 +7,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
+set incsearch
+set hlsearch
+set ruler
+set ignorecase
