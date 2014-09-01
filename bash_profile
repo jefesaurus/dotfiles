@@ -75,10 +75,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
@@ -124,4 +120,3 @@ fi
 
 # enable texlive custom install:
 PATH=/usr/local/texlive/2012/bin/x86_64-linux:$PATH
-PATH=~/.cabal/bin:$PATH
