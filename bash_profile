@@ -124,3 +124,4 @@ fi
 
 # enable texlive custom install:
 PATH=/usr/local/texlive/2012/bin/x86_64-linux:$PATH
+PATH=~/.cabal/bin:$PATH
