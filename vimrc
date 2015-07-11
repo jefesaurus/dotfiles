@@ -1,5 +1,6 @@
 set t_Co=256
 set mouse=a
+set ttymouse=sgr
 syntax on
 colorscheme mustang
 set number
@@ -13,3 +14,4 @@ set ignorecase
 set incsearch
 set ruler
 nnoremap <CR> :noh<CR><CR>
+

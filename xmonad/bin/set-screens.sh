@@ -45,3 +45,5 @@ echo $xrandrcmd
 $xrandrcmd
 nitrogen --restore &
 $statusbarcmd &
+
+xmodmap /home/glalonde/.Xmodmap

@@ -131,3 +131,9 @@ fi
 export PATH=$PATH:~/.cabal/bin
 export PATH=$PATH:/opt
 #source /opt/ros/hydro/setup.bash
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/glalonde/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/home/glalonde/google-cloud-sdk/completion.bash.inc'

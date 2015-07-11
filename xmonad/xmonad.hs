@@ -31,7 +31,7 @@ myModMask            = mod4Mask       -- changes the mod key to "super"
 myFocusedBorderColor = "#ED5235"      -- color of focused border
 myNormalBorderColor  = "#464646"      -- color of inactive border
 myBorderWidth        = 1              -- width of border around windows
-myTerminal           = "lxterminal"   -- which terminal software to use
+myTerminal           = "gnome-terminal"   -- which terminal software to use
 
 
 myWorkspaces =
@@ -85,10 +85,12 @@ myKeyBindings =
     , ((myModMask, xK_s), withFocused $ windows . W.sink)
 
     -- Quick launch
-    , ((myModMask, xK_t), spawn "lxterminal")
+    , ((myModMask, xK_t), spawn "gnome-terminal")
     , ((myModMask, xK_c), spawn "chromium-browser")
     , ((myModMask, xK_space), spawn "dmenu_run")
     , ((0, xF86XK_Launch1), spawn "chromium-browser --incognito")
+    , ((0, xK_Print), spawn "scrot -u -d 0 '/home/glalonde/screenshots/%Y-%m-%d-%s_$wx$h.png'")
+    , ((myModMask, xK_Print), spawn "scrot -u -s -d 2 '/home/glalonde/screenshots/%Y-%m-%d-%s_$wx$h.png'")
     , ((myModMask, xK_x), kill)
     , ((myModMask, xK_n), refresh)
 
