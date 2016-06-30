@@ -19,8 +19,6 @@ draw_outline no
 draw_shades no
 gap_x 0
 gap_y 0 
-minimum_size 1364, 0
-maximum_width 1364
 max_specials 512
 max_user_text 65536
 max_port_monitor_connections 64

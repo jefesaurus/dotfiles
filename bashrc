@@ -85,27 +85,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias sshm1='ssh 192.168.1.20'
-alias sshm2='ssh 192.168.1.21'
-alias sshm3='ssh 192.168.1.22'
-alias sshm4='ssh 192.168.1.23'
-alias sshm1p='ssh -p 9201 geoff@monster-01.cumulusnetworks.com'
-alias sshm2p='ssh -p 9202 geoff@monster-02.cumulusnetworks.com'
-alias sshm3p='ssh -p 9203 geoff@monster-03.cumulusnetworks.com'
-alias sshm4p='ssh -p 9204 geoff@monster-04.cumulusnetworks.com'
-alias sshdx='ssh geoff@dealextreme.mit.edu'
-alias sshdxr='ssh root@dealextreme.mit.edu'
-alias ssha='ssh -X glalonde@athena.dialup.mit.edu'
-alias sshc0='ssh -X glalonde@cloud0.csail.mit.edu'
-alias sshc1='ssh -X glalonde@cloud1.csail.mit.edu'
-alias sshc2='ssh -X glalonde@cloud2.csail.mit.edu'
-alias sshc3='ssh -X glalonde@cloud3.csail.mit.edu'
-alias sshc4='ssh -X glalonde@cloud4.csail.mit.edu'
-alias sshc8='ssh -X glalonde@cloud8.csail.mit.edu'
-#passwordless entry:
-#run ssh-keygen -t rsa
-#and then ssh-copy-id -i ~/.ssh/id_rsa.pub externalcomp
-
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -126,14 +105,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-# For a cabal install
-export PATH=$PATH:~/.cabal/bin
-export PATH=$PATH:/opt
-#source /opt/ros/hydro/setup.bash
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/glalonde/google-cloud-sdk/path.bash.inc'
-
-# The next line enables bash completion for gcloud.
-source '/home/glalonde/google-cloud-sdk/completion.bash.inc'
