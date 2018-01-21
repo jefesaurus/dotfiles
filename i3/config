@@ -176,8 +176,8 @@ bindsym $mod+r mode "resize"
 
 new_window 1pixel
 
-exec --no-startup-id xrandr --dpi 220
-exec --no-startup-id compton -b -c -f
-exec --no-startup-id udiskie& 
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id conky
+#exec --no-startup-id xrandr --dpi 220
+#exec --no-startup-id compton -b -c -f
+#exec --no-startup-id udiskie& 
+#exec --no-startup-id nitrogen --restore
+#exec --no-startup-id conky
